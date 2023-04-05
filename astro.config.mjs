@@ -8,7 +8,7 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://lokkeestudios.com',
+  site: 'https://ascendant.finance',
   adapter: vercelStatic({
     analytics: true,
   }),
