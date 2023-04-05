@@ -1,0 +1,58 @@
+---
+import lokkee2Image from '@assets/images/lokkee2.webp';
+import ReactIcon from '@components/icons/ReactIcon';
+import JavascriptIcon from '@components/icons/JavascriptIcon';
+import MongoIcon from '@components/icons/MongoIcon';
+import TailwindIcon from '@components/icons/TailwindIcon';
+import PythonIcon from '@components/icons/PythonIcon';
+import RustIcon from '@components/icons/RustIcon';
+import SolidityIcon from '@components/icons/SolidityIcon';
+import ButtonLink from '@components/button/ButtonLink';
+import ChildrenEntranceAnimator from '@components/ChildrenEntranceAnimator';
+import Container from '@components/Container';
+import Caption from '@components/text/Caption';
+import Heading from '@components/text/Heading.astro';
+import Paragraph from '@components/text/Paragraph.astro';
+import site from '@data/site';
+---
+
+<section
+  id="stack"
+  class="relative z-10 flex min-h-screen w-full flex-col items-center bg-primary py-28 md:flex-row"
+>
+ <!-- <img
+    src={lokkee2Image.src}
+    alt="Myself, LOKKEE, walking down a pier"
+    width={lokkee2Image.width}
+    height={lokkee2Image.height}
+    decoding="async"
+    loading="lazy"
+    class="relative -top-28 max-h-screen w-full object-cover object-center md:absolute md:top-0 md:h-full md:w-1/2 md:pr-10 xl:pr-0"
+  />-->
+  <Container>
+    <div class="ml-auto md:ml-auto w-full text-center">
+      <ChildrenEntranceAnimator>
+        <Caption client:visible>Source code</Caption>
+        <div class='flex flex-row w-full'>
+        <JavascriptIcon className='mx-3 hover:animate-bounce'/>
+        <ReactIcon className='mx-3 hover:animate-bounce'/>
+        <MongoIcon className='mx-3 hover:animate-bounce'/>
+        <TailwindIcon className='mx-3 hover:animate-bounce'/>
+        <PythonIcon className='mx-3 hover:animate-bounce'/>
+        <RustIcon className='mx-3 hover:animate-bounce'/>
+        <SolidityIcon className='mx-3 hover:animate-bounce'/>
+        </div>
+       
+      </ChildrenEntranceAnimator>
+      <!--<ButtonLink
+        href={site.sourcecodeUrl}
+        rel="noreferrer"
+        target="_blank"
+        foregroundColor="error"
+        backgroundColor="light"
+      >
+        Show me
+      </ButtonLink>-->
+    </div>
+  </Container>
+</section>

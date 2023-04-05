@@ -1,0 +1,41 @@
+---
+import Footer from '@components/layout/Footer';
+import Head from '@components/layout/Head.astro';
+import Header from '@components/layout/Header';
+import LoadingScreen from '@components/layout/LoadingScreen';
+
+export interface Props {
+  title?: string;
+  isInitialHeaderBackgroundTransparent?: boolean;
+}
+
+const { title, isInitialHeaderBackgroundTransparent } = Astro.props;
+---
+
+<!DOCTYPE html>
+
+<html
+  lang="en"
+  class="scroll-smooth"
+>
+  <Head title={title} />
+  <body
+    class="fixed overflow-y-scroll bg-neutrals-900 text-neutrals-50 antialiased selection:bg-primary selection:text-neutrals-50"
+  >
+    <a
+      href="#main"
+      class="sr-only"
+    >
+      Skip to main content
+    </a>
+    <LoadingScreen client:load />
+    <Header
+      client:idle
+      isInitialBackgroundTransparent={isInitialHeaderBackgroundTransparent}
+    />
+
+    <slot />
+
+    <Footer client:visible />
+  </body>
+</html>

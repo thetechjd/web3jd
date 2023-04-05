@@ -1,0 +1,19 @@
+---
+import AboutSection from '@components/sections/AboutSection.astro';
+import ContactSection from '@components/sections/ContactSection.astro';
+import HeroSection from '@components/sections/HeroSection.astro';
+import SourceCodeSection from '@components/sections/SourceCodeSection.astro';
+// import WorkSection from '@components/sections/WorkSection.astro';
+import Layout from '@layouts/Layout.astro';
+---
+
+<Layout isInitialHeaderBackgroundTransparent>
+  <main id="main">
+    <HeroSection />
+    <AboutSection />
+    <!--<WorkSection />-->
+    <SourceCodeSection />
+    <ContactSection />
+    
+  </main>
+</Layout>

@@ -1,0 +1,20 @@
+{
+  "name": "LOKKEE STUDIOS",
+  "short_name": "LOKKEE STUDIOS",
+  "background_color": "#060918",
+  "theme_color": "#6919FF",
+  "display": "standalone",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
