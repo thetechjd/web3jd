@@ -1,14 +1,15 @@
 ---
 import Button from '@components/button/Button';
 import site from '@data/site';
+import JD from '@assets/images/logos/jd.png';
 ---
 
 <section
   id="contact"
-  class="relative z-10 flex w-full items-center justify-center bg-neutrals-900 py-28 xl:min-h-screen"
+  class="relative z-10 flex w-full items-center justify-center bg-primary py-28 xl:min-h-screen"
   aria-label="Contact"
 >
-  <div class="mx-auto h-full w-10/12 2xl:w-[80%]">
+  <div class="mx-14 h-full w-10/12 2xl:w-[80%]">
     <!-- split -->
     <div class="flex h-full w-full flex-col lg:flex-row">
       <!-- split left -->
@@ -44,16 +45,12 @@ import site from '@data/site';
       </div>
     </div>
     </div>
- <!--
-
-
-
-
-  
-  -->
+    
+ 
       <!-- split left -->
-    <!--  <div class="mt-10 basis-full lg:mt-0 lg:ml-28 lg:self-center">
-        <div
+     <div class="mt-10 basis-full lg:mt-0 lg:ml-28 lg:self-center">
+      <img src={JD.src} class='w-4/5'/>
+    <!--     <div
           id="contact-form-success"
           class="hidden"
         >
@@ -293,6 +290,7 @@ import site from '@data/site';
           </Button>
         </form>
       </div>-->
+    </div>
     
   
 </section>

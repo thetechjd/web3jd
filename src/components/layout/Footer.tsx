@@ -50,7 +50,7 @@ function Footer() {
   return (
     <footer
       aria-label="Primary"
-      className="relative z-10 w-full border-t-0.5 border-neutrals-600 py-3"
+      className="relative z-10 w-full border-t-0.5 bg-primary border-neutrals-600 py-3"
     >
       <Container>
         <div className="flex justify-center py-12">
