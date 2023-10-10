@@ -1,5 +1,10 @@
 ---
 import lokkee2Image from '@assets/images/lokkee2.webp';
+import cryptocadet from '@assets/images/cryptocadet.png'
+import incubatex from '@assets/images/incubatex.png'
+import lipa from '@assets/images/lipa.png'
+import jaytradz from '@assets/images/jaytradz.png'
+import ascendant from '@assets/images/ascendant.png'
 import ReactIcon from '@components/icons/ReactIcon';
 import JavascriptIcon from '@components/icons/JavascriptIcon';
 import MongoIcon from '@components/icons/MongoIcon';
@@ -41,6 +46,43 @@ import site from '@data/site';
         <PythonIcon className='mx-3 hover:animate-bounce'/>
         <RustIcon className='mx-3 hover:animate-bounce'/>
         <SolidityIcon className='mx-3 hover:animate-bounce'/>
+        </div>
+        <div class='flex flex-wrap lg:flex-row justify-around w-full my-20'>
+          <a href="https://cryptocadet.app" target="_blank"><div class="flex flex-col relative">
+            <div class="absolute flex h-full w-full rounded-md hover:bg-slate-900/25 cursor-pointer"></div>
+            <img src={cryptocadet.src} class="flex justify-around w-[300px] h-[200px] rounded-md my-5 mx-3"/>
+            <Paragraph>CRYPTOCADET</Paragraph>
+          </div></a>
+          <a href="https://www.incubatex.io/" target="_blank"> <div class="flex flex-col">
+            <div class="absolute flex h-full w-full rounded-md hover:bg-slate-900/25 cursor-pointer"></div>
+
+            <img src={incubatex.src} class="flex justify-around w-[300px]  h-[200px] rounded-md my-5 mx-3" />
+            <Paragraph>INCUBATEX</Paragraph>
+
+          </div></a>
+          <a href="https://www.lipa-center.si/" target="_blank"><div class="flex flex-col">
+            <div class="absolute flex h-full w-full rounded-md hover:bg-slate-900/25 cursor-pointer"></div>
+
+            <img src={lipa.src} class="flex justify-around w-[300px]  h-[200px] rounded-md my-5 mx-3"/>
+            <Paragraph>LIPA CENTER</Paragraph>
+
+          </div></a>
+          <a href="https://jaytradz.com/" target="_blank"> <div class="flex flex-col">
+            <div class="absolute flex h-full w-full rounded-md hover:bg-slate-900/25 cursor-pointer"></div>
+
+            <img src={jaytradz.src} class="flex justify-around w-[300px]  h-[200px] rounded-md my-5 mx-3"/>
+            <Paragraph>JAYTRADZ</Paragraph>
+
+          </div></a>
+          <a href="https://ascendant.finance/" target="_blank"> <div class="flex flex-col">
+            <div class="absolute flex h-full w-full rounded-md hover:bg-slate-900/25 cursor-pointer"></div>
+
+            <img src={ascendant.src} class="flex justify-around w-[300px]  h-[200px] rounded-md my-5 mx-3"/>
+            <Paragraph>ASCENDANT.FINANCE</Paragraph>
+
+          </div></a>
+          
+
         </div>
        
       </ChildrenEntranceAnimator>
