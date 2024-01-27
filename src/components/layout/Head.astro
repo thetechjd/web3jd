@@ -35,7 +35,7 @@ const { PUBLIC_GOOGLE_SITE_VERIFICATION, PUBLIC_GOOGLE_ANALYTICS_ID } =
         title: 'THE WEB3 JD',
         type: 'website',
         url: cannonical,
-        image: '/banner-1200x630.png',
+        image: '/banner.png',
       },
       optional: {
         description,
@@ -67,18 +67,5 @@ const { PUBLIC_GOOGLE_SITE_VERIFICATION, PUBLIC_GOOGLE_ANALYTICS_ID } =
       ],
     }}
   />
-  <script
-    type="text/partytown"
-    async
-    src={`https://www.googletagmanager.com/gtag/js?id=${PUBLIC_GOOGLE_ANALYTICS_ID}`}
-  ></script>
-  <script type="text/partytown" define:vars={{ PUBLIC_GOOGLE_ANALYTICS_ID }}>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', PUBLIC_GOOGLE_ANALYTICS_ID);
-  </script>
+  
 </head>
