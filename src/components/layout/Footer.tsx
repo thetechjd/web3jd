@@ -60,7 +60,7 @@ function Footer() {
           >
             <img
               src={lokkeestudiosLogo.src}
-              alt="LOKKEE STUDIOS"
+              alt="ASCENDANT.FINANCE"
               width={164}
               height={164}
               decoding="async"
